@@ -1,0 +1,17 @@
+#TILLO
+--------------------------------------------------------------
+--- Tillotson EOS parameter for *** Kyanite ***
+--------------------------------------------------------------
+TL_RHO0               Reference density (kg/m^3)    : 3.65D+03
+TL_CHEAT              Spec. heat capacity (J/kg/K)  : 0.807D+03
+TL_BULKA              Bulk modulus (Pa)             : 9.09D+10
+TL_BULKB              Tillotson B constant (Pa)     : 2.73D+11
+TL_EZERO              Tillotson E0 constant (J/kg)  : 5.24D+05
+TL_THERMA             Tillotson a constant          : 5.00D-01
+TL_THERMB             Tillotson b constant          : 2.50D+00
+TL_ALPHA              Tillotson alpha constant      : 5.D0
+TL_BETA               Tillotson beta constant       : 5.D0
+TL_EIV                SIE incipient vaporisation    : 3.71D+5
+TL_ECV                SIE complete vaporisation     : 16.0D+6
+--------------------------------------------------------------
+<<END

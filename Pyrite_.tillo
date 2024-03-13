@@ -1,0 +1,17 @@
+#TILLO
+--------------------------------------------------------------
+--- Tillotson EOS parameter for *** Pyrite ***
+--------------------------------------------------------------
+TL_RHO0               Reference density (kg/m^3)    : 4.91D+03
+TL_CHEAT              Spec. heat capacity (J/kg/K)  : 0.807D+03
+TL_BULKA              Bulk modulus (Pa)             : 1.47D+11
+TL_BULKB              Tillotson B constant (Pa)     : 8.84D+10
+TL_EZERO              Tillotson E0 constant (J/kg)  : 1.33D+08
+TL_THERMA             Tillotson a constant          : 5.00D-01
+TL_THERMB             Tillotson b constant          : 1.35D+00
+TL_ALPHA              Tillotson alpha constant      : 5.D0
+TL_BETA               Tillotson beta constant       : 5.D0
+TL_EIV                SIE incipient vaporisation    : 5.00D+5
+TL_ECV                SIE complete vaporisation     : 1.39D+6
+--------------------------------------------------------------
+<<END

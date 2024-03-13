@@ -1,0 +1,17 @@
+#TILLO
+--------------------------------------------------------------
+--- Tillotson EOS parameter for *** Microcline ***
+--------------------------------------------------------------
+TL_RHO0               Reference density (kg/m^3)    : 2.57D+03
+TL_CHEAT              Spec. heat capacity (J/kg/K)  : 0.727D+03
+TL_BULKA              Bulk modulus (Pa)             : 5.02D+10
+TL_BULKB              Tillotson B constant (Pa)     : 3.01D+10
+TL_EZERO              Tillotson E0 constant (J/kg)  : 1.03D+07
+TL_THERMA             Tillotson a constant          : 5.00D-01
+TL_THERMB             Tillotson b constant          : 5.00D-01
+TL_ALPHA              Tillotson alpha constant      : 5.D0
+TL_BETA               Tillotson beta constant       : 5.D0
+TL_EIV                SIE incipient vaporisation    : 2.16D+5
+TL_ECV                SIE complete vaporisation     : 8.35D+6
+--------------------------------------------------------------
+<<END

@@ -1,0 +1,17 @@
+#TILLO
+--------------------------------------------------------------
+--- Tillotson EOS parameter for *** Anorthite ***
+--------------------------------------------------------------
+TL_RHO0               Reference density (kg/m^3)    : 2.89D+03
+TL_CHEAT              Spec. heat capacity (J/kg/K)  : 0.600D+03
+TL_BULKA              Bulk modulus (Pa)             : 3.95D+10
+TL_BULKB              Tillotson B constant (Pa)     : 5.68D+10
+TL_EZERO              Tillotson E0 constant (J/kg)  : 5.03D+04
+TL_THERMA             Tillotson a constant          : 5.00D-01
+TL_THERMB             Tillotson b constant          : 1.47D+01
+TL_ALPHA              Tillotson alpha constant      : 5.D0
+TL_BETA               Tillotson beta constant       : 5.D0
+TL_EIV                SIE incipient vaporisation    : 1.18D+5
+TL_ECV                SIE complete vaporisation     : 3.60D+5
+--------------------------------------------------------------
+<<END

@@ -1,0 +1,17 @@
+#TILLO
+--------------------------------------------------------------
+--- Tillotson EOS parameter for *** Tremolite ***
+--------------------------------------------------------------
+TL_RHO0               Reference density (kg/m^3)    : 2.90D+03
+TL_CHEAT              Spec. heat capacity (J/kg/K)  : 0.807D+03
+TL_BULKA              Bulk modulus (Pa)             : 6.48D+10
+TL_BULKB              Tillotson B constant (Pa)     : 1.94D+10
+TL_EZERO              Tillotson E0 constant (J/kg)  : 2.00D+08
+TL_THERMA             Tillotson a constant          : 5.00D-01
+TL_THERMB             Tillotson b constant          : 9.10D-01
+TL_ALPHA              Tillotson alpha constant      : 5.D0
+TL_BETA               Tillotson beta constant       : 5.D0
+TL_EIV                SIE incipient vaporisation    : 0.75D+5
+TL_ECV                SIE complete vaporisation     : 15.14D+6
+--------------------------------------------------------------
+<<END

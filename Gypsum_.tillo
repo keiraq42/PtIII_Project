@@ -1,0 +1,17 @@
+#TILLO
+--------------------------------------------------------------
+--- Tillotson EOS parameter for *** Gypsum ***
+--------------------------------------------------------------
+TL_RHO0               Reference density (kg/m^3)    : 2.28D+03
+TL_CHEAT              Spec. heat capacity (J/kg/K)  : 1.09D+03
+TL_BULKA              Bulk modulus (Pa)             : 2.28D+10
+TL_BULKB              Tillotson B constant (Pa)     : 1.37D+10
+TL_EZERO              Tillotson E0 constant (J/kg)  : 7.45D+07
+TL_THERMA             Tillotson a constant          : 5.00D-01
+TL_THERMB             Tillotson b constant          : 1.62D+00
+TL_ALPHA              Tillotson alpha constant      : 5.D0
+TL_BETA               Tillotson beta constant       : 5.D0
+TL_EIV                SIE incipient vaporisation    : 3.48D+5
+TL_ECV                SIE complete vaporisation     : 11.8D+6
+--------------------------------------------------------------
+<<END

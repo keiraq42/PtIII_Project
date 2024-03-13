@@ -1,0 +1,17 @@
+#TILLO
+--------------------------------------------------------------
+--- Tillotson EOS parameter for *** Enstatite ***
+--------------------------------------------------------------
+TL_RHO0               Reference density (kg/m^3)    : 3.11D+03
+TL_CHEAT              Spec. heat capacity (J/kg/K)  : 0.818D+03
+TL_BULKA              Bulk modulus (Pa)             : 9.12D+10
+TL_BULKB              Tillotson B constant (Pa)     : 5.47D+10
+TL_EZERO              Tillotson E0 constant (J/kg)  : 5.00D+05
+TL_THERMA             Tillotson a constant          : 5.00D-01
+TL_THERMB             Tillotson b constant          : 5.00D-01
+TL_ALPHA              Tillotson alpha constant      : 5.D0
+TL_BETA               Tillotson beta constant       : 5.D0
+TL_EIV                SIE incipient vaporisation    : 6.14D+5
+TL_ECV                SIE complete vaporisation     : 27.6D+5
+--------------------------------------------------------------
+<<END

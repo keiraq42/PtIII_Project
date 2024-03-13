@@ -1,0 +1,17 @@
+#TILLO
+--------------------------------------------------------------
+--- Tillotson EOS parameter for *** Clay ***
+--------------------------------------------------------------
+TL_RHO0               Reference density (kg/m^3)    : 1.35D+03
+TL_CHEAT              Spec. heat capacity (J/kg/K)  : 0.773D+03
+TL_BULKA              Bulk modulus (Pa)             : 1.79D+10
+TL_BULKB              Tillotson B constant (Pa)     : 5.38D+09
+TL_EZERO              Tillotson E0 constant (J/kg)  : 2.00D+08
+TL_THERMA             Tillotson a constant          : 5.00D-01
+TL_THERMB             Tillotson b constant          : 1.06D+00
+TL_ALPHA              Tillotson alpha constant      : 5.D0
+TL_BETA               Tillotson beta constant       : 5.D0
+TL_EIV                SIE incipient vaporisation    : 4.72D+6
+TL_ECV                SIE complete vaporisation     : 18.2D+6
+--------------------------------------------------------------
+<<END
