@@ -1,0 +1,62 @@
+#ISINP
+------------------------------------------------------------------------
+------------------- General Model Info ---------------------------------
+VERSION               __DO NOT MODIFY__             : 4.1
+DIMENSION             dimension of input file       : 2
+PATH                  Data file path                : ./
+MODEL                 Modelname                     : output
+------------------- Mesh Geometry Parameters ---------------------------
+GRIDH                 horizontal cells              : 0          : 550         : 0
+GRIDV                 vertical cells                : 0          : 1000        : 0
+GRIDEXT               ext. factor                   : 1.03d0
+GRIDSPC               grid spacing                  : 5.0D-5
+GRIDSPCM              max. grid spacing             : -20.D0
+------------------- Global Setup Parameters ----------------------------
+S_TYPE                setup type                    : IMPRT_GEOM
+ALE_MODE              ALE modus                     : EULER
+T_SURF                Surface temp                  : 293.D0
+GRAD_TYPE             gradient type                 : NONE
+COL_SITE              collision_height              : 750
+------------------- Projectile Parameters ------------------------------
+OBJNUM                number of proj.               : 6
+OBJRESH               CPPR horizontal               : 20       : 500      : 500      : 310      : 75       : 75
+OBJRESV               CPPR vertical                 : 20       : 30       : 340      : 240      : 10       : 10
+OBJVEL                object velocity               : -7.252D3 : 0.0      : 0.0      : 0.0      : 0.0      : 0.0
+OBJMAT                object material               : project  : frplate  : contain  : target1  : VOID___  : VOID__
+OBJTYPE               object type                   : SPHEROID : CYLINDER : CYLINDER : CYLINDER : CYLINDER : CYLINDER
+OBJTPROF              object temp prof              : CONST    : CONST    : CONST    : CONST    : CONST    : CONST
+OBJTEMP               object temperature            : 300      : 300      : 300      : 300      : 300      : 300
+OBJOFF_H              proj offset (hor)             : 0        : 0        : 0        : 0        : 425      : 425
+OBJOFF_V              proj offset (ver)             : 60       : 0        : -680     : -480     : -20      : -480
+------------------- Target Parameters ----------------------------------
+LAYNUM                number of layers               : 0
+------------------- Time Parameters ------------------------------------
+DT                    initial time increment        : 1.00D-08
+DTMAX                 maximum timestep              : 1.25D-07
+TEND                  end time                      : 1.25D-05
+DTSAVE                save interval                 : 1.25D-07
+------------------- Boundary Conditions --------------------------------
+BND_L                 left                          : FREESLIP
+BND_R                 right                         : OUTFLOW
+BND_B                 bottom                        : NOSLIP
+BND_T                 top                           : OUTFLOW
+------------------- Numerical Stability Parameters ---------------------
+AVIS                  art. visc. linear             : 0.24D0
+AVIS2                 art. visc. quad.              : 1.2D0
+------------------- Tracer Particle Parameters -------------------------
+TR_QUAL     quality                       : 1
+TR_SPCH     tracer spacing X              : -1.D0 : -1.D0 : -1.D0 : -1.D0
+TR_SPCV     tracer spacing Y              : -1.D0 : -1.D0 : -1.D0 : -1.D0
+TR_VAR      add. tracer fiels             : #TrP-TrT-TrE-Trp-Trt-Trd-Tre-Trs-TrV-TrX-TrY-TrR-TrH-TrA-TrM#
+------------------- (Material) Model parameters (global) ---------------
+TENSILE     Tensile failure               : 1
+STRESS      Consider stress               : 1
+ROCUTOFF    Density cutoff                : 1.0
+VEL_CUT     Velocity cutoff               : -2.
+VEL_MIN     Min. velocity                 : 10.0
+LP_TOLER    Pressure tolerance            : 3.0D-8
+------------------- Data Saving Parameters -----------------------------
+QUALITY     Compression rate              : -50
+VARLIST     List of variables             : #Den-Tmp-Sie-Pre-Ent-Dam-Yld-Csn-VEL-TPS-VSt-SMU-Ert-Art#
+------------------------------------------------------------------------
+<<END
