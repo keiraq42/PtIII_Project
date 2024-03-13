@@ -1,3 +1,4 @@
+
 import matplotlib.pyplot as plt
 import matplotlib.colors as colors
 import numpy as np
@@ -9,30 +10,33 @@ psp.mkdir_p(dir)
 
 # Open data files 
 m = psp.opendatfile('../output/jdata.dat',scale='cm')
-
+max = 300
+step = 50
+cmax = 150
 #Create subplots (1 row, 2 columns)
 fig = plt.figure()
 ax1 = fig.add_subplot(131)
 ax2 = fig.add_subplot(133, aspect = 'equal')
 cbx = fig.add_axes([0.39, 0.11,0.03,0.77])
-ccx = fig.add_axes([0.54,0.11,0.03,0.77])
+ccx = fig.add_axes([0.52,0.11,0.03,0.77])
 
 # Loop over timesteps
-for i in np.arange(0, m.nsteps, 10):
+for i in np.arange(0, m.nsteps, 150):
 
     # Set axis limits
-    ax1.set_xlim(0,40)
+    ax1.set_xlim(0,max)
     ax2.set_xlim([-m.xhires[1], m.xhires[1]])
     
-    ax1.set_ylim([-3.5, 1])
-    ax2.set_ylim([-3.5, 1])
+    ax1.set_ylim([-2, 0.5])
+    ax2.set_ylim([-2, 0.5])
     
     
     
     ax1.tick_params(axis='both', labelsize=7)
     ax2.tick_params(axis='both', labelsize=7)
-    ax2.set_xticks(np.arange(-3, 3.1, 1))
-    ax2.set_yticks(np.arange(-3, 1.1, 1))
+    ax1.set_xticks(np.arange(0, max+1, step))
+    ax2.set_xticks(np.arange(-0.5, 0.51, 0.5))
+    ax2.set_yticks(np.arange(-2, 0.6, 0.5))
     ax1.title.set_text('Pressure')
     
     
@@ -54,7 +58,7 @@ for i in np.arange(0, m.nsteps, 10):
     fig.suptitle('Current vs Peak Pressure at {:3.2f} $\mu$s'.format(s.time*1e6),x=0.5)
     # Use figure title for time
 
-    ax1.plot(s.Pre[50,:]*1e-9, m.yc[50,:], 'r--', lw=0.75, label = 'Transient Pressure Profile')
+    ax1.plot(s.Pre[50,:]*1e-9, m.yc[50,:], 'r--', lw = 0.75, label = 'Current Pressure')
     
     PeakPressures = s.TrP*1.e-9
     ylocations = s.ymark
@@ -77,8 +81,8 @@ for i in np.arange(0, m.nsteps, 10):
         b = intervals[j]
         t = intervals[j+1]
         
-        depth.append((b+t)/2)
-        
+        depth.append((b + t) / 2)
+
         press = PeakPressures[(ylocations > b) & (ylocations < t)]
 
         if len(press) > 0:
@@ -97,13 +101,13 @@ for i in np.arange(0, m.nsteps, 10):
             min_press.append(np.nan)
       
     ax1.plot(avg_press, depth, lw=0.75, label = 'Average Peak Pressure')
-#    ax1.plot(max_press, depth, lw=0.75, label = 'Maximum Peak Pressure')
- #   ax1.plot(min_press, depth, lw=0.75, label = 'Minimum Peak Pressure') 
+    ax1.plot(max_press, depth, lw=0.75, label = 'Maximum Peak Pressure')
+    ax1.plot(min_press, depth, lw=0.75, label = 'Minimum Peak Pressure') 
     
     ax1.legend(fontsize=6)
     
-    cmap = colors.ListedColormap(['m', 'y', 'k', 'g', 'r'])
-    bounds = np.arange(1.5,7,1)
+    cmap = colors.ListedColormap(['y', 'g', 'b', 'r', 'k'])
+    bounds = np.arange(0.5,6,1)
     norm = colors.BoundaryNorm(bounds,cmap.N)
     
     
@@ -111,15 +115,18 @@ for i in np.arange(0, m.nsteps, 10):
     q = ax2.contour(m.xc, m.yc, s.cmc[1], 1 ,colors='k',linewidths=1)
     q = ax2.contour(-m.xc, m.yc, s.cmc[1], 1 ,colors='k',linewidths=1)
     
-    r = ax2.scatter(-s.xmark, s.ymark, c = s.TrP*1.e-9, vmin=0, vmax=20, s = 0.01, cmap='plasma')
+    r = ax2.scatter(-s.xmark, s.ymark, c = s.TrP*1.e-9, vmin=0, vmax=cmax, s = 0.01, cmap='plasma')
   
     # A colorbar
-    cb1=fig.colorbar(p, cax=ccx, orientation='vertical')
-    cb1.set_label(' Tit Iron MQC', fontsize = 7)
-    cb1.set_ticks([])
-
-    cb2=fig.colorbar(r, cax=cbx, orientation='vertical')
-    cb2.set_label('Pressure [GPa]', fontsize = 7)
+# A colorbar for material types
+    cb1 = fig.colorbar(p, cax=ccx, orientation='vertical')
+    cb1.set_label('Iron         QOGE', fontsize=7)
+    cb1.set_ticks([])  # Remove ticks
+  
+# A colorbar for pressure
+    cb2 = fig.colorbar(r, cax=cbx, orientation='vertical')
+    cb2.set_label('Pressure [GPa]', fontsize=7)
+    cb2.set_ticks(np.arange(0, cmax + 1, 30))  # Set ticks for pressure
 
     # Save the figure
     print ('{}/{:03d}.png'.format(dir,i))
