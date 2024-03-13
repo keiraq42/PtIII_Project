@@ -1,0 +1,54 @@
+#ISMAT
+---------------------------------------------------------------------------------------------------
+MATNAME     Material name                 : project    : frplate    : contain    : target2    : target1    : target3
+EOSNAME     EOS name                      : Polycar    : titaniu    : iron___    : Magneti    : Quartz_    : Clay___
+EOSTYPE     EOS type                      : tillo      : tillo      : tillo      : tillo      : tillo      : tillo
+STRMOD      Strength model                : VNMS       : VNMS       : JNCK       : ROCK       : ROCK       : ROCK
+DAMMOD      Damage model                  : NONE       : NONE       : NONE       : COLLINS    : COLLINS    : COLLINS
+ACFL        Acoustic fluidisation         : NONE       : NONE       : NONE       : NONE       : NONE       : NONE
+PORMOD      Porosity model                : NONE       : NONE       : NONE       : WUNNEMA    : WUNNEMA    : WUNNEMA
+DILMOD      Dilatancy model               : NONE       : NONE       : NONE       : NONE       : NONE       : NONE
+THSOFT      Thermal softening             : OHNAKA     : OHNAKA     : JNCK       : OHNAKA     : OHNAKA     : OHNAKA
+LDWEAK      Low density weakening         : POLY       : POLY       : POLY       : POLY       : POLY       : POLY
+---------------------------------------------------------------------------------------------------
+ANETABLE    ANEOS Table mode              : XXXXXXXXXX : XXXXXXXXXX : READ       : XXXXXXXXXX : XXXXXXXXXX : XXXXXXXXXX
+ANEVARS     ANEOS Table variables         : XXXXXXXXXX : XXXXXXXXXX : TmpDen     : XXXXXXXXXX : XXXXXXXXXX : XXXXXXXXXX
+ANENT       No. of thermal nodes          : XXXXXXXXXX : XXXXXXXXXX : 60         : XXXXXXXXXX : XXXXXXXXXX : XXXXXXXXXX
+ANEND       No. of density nodes          : XXXXXXXXXX : XXXXXXXXXX : 120        : XXXXXXXXXX : XXXXXXXXXX : XXXXXXXXXX
+---------------------------------------------------------------------------------------------------
+POIS        pois                          : 3.4000D-01 : 3.4000D-01 : 3.0000D-01 : 3.0000D-01 : 3.0000D-01 : 3.0000D-01
+---------------------------------------------------------------------------------------------------
+PMININ     Minimum pressure               : -5.000D+08 : -5.000D+08 : -1.750D+08 : XXXXXXXXXX : XXXXXXXXXX : XXXXXXXXXX
+---------------------------------------------------------------------------------------------------
+TMELT0     tmelt0                         : 1.9410D+03 : 1.9410D+03 : 1.8110D+03 : 1.9960D+03 : 1.9960D+03 : 1.9960D+03
+CHEAT      C_heat                         : 5.23000D+2 : 5.23000D+2 : 5.02000D+2 : 7.3300D+02 : 7.3300D+02 : 7.3300D+02
+TFRAC      tfrac                          : 1.2000D+00 : 1.2000D+00 : XXXXXXXXXX : 1.2000D+00 : 1.2000D+00 : 1.2000D+00
+ASIMON     a_simon                        : 7.00000D+9 : 7.00000D+9 : 2.4250D+10 : 6.0000D+09 : 6.0D+09    : 6D+09
+CSIMON     c_simon                        : 7.19000D+0 : 7.19000D+0 : 2.11100D+0 : 3.0000D+00 : 3          : 3
+---------------------------------------------------------------------------------------------------
+YINT0      yint0                          : 5.0000D+08 : 5.0000D+08 : XXXXXXXXXX : 1.8700D+07 : 1.87D+07   : 1.87D+07
+FRICINT    fricint                        : XXXXXXXXXX : XXXXXXXXXX : XXXXXXXXXX : 1.8000D+00 : 1.8        : 1.8
+YLIMINT    ylimint                        : XXXXXXXXXX : XXXXXXXXXX : XXXXXXXXXX : 1.0000D+09 : 1.0D+09    : 1.0D+09
+---------------------------------------------------------------------------------------------------
+YDAM0      ydam0 (ycoh)                   : XXXXXXXXXX : XXXXXXXXXX : XXXXXXXXXX : 1.0000D+03 : 1.0D+03    : 1.0D+03
+FRICDAM    fricdam                        : XXXXXXXXXX : XXXXXXXXXX : XXXXXXXXXX : 6.7000D-01 : 6.7D-01    : 6.7D-01
+YLIMDAM    ylimdam                        : XXXXXXXXXX : XXXXXXXXXX : XXXXXXXXXX : 1.0000D+09 : 1.0D+09    : 1.0D+09
+---------------------------------------------------------------------------------------------------
+YTENS0     Tensile_strength               : 2.4000D+08 : 2.4000D+08 : 2.1500D+08 : 1.0000D+07 : 1.0D+07    : 1.0D+07
+BDTPRES    Brit.-duct. pressure           : XXXXXXXXX  : XXXXXXXXXX : XXXXXXXXXX : -1.000D+00 : -1         : -1
+BPTPRES    Brit.-plas. pressure           : XXXXXXXXX  : XXXXXXXXXX : XXXXXXXXXX : -1.000D+00 : -1         : -1
+-- Porosity Parameters ---------------------------------------------------------------------------------------------------------------------------------
+ALPHA0        Initial dist.               : XXXXXXXXX  : XXXXXXXXX  : XXXXXXXXX  : 1.250D+00  : 1.25       : 1.25
+EPSE0         El. vol. str. threshold     : XXXXXXXXX  : XXXXXXXXX  : XXXXXXXXX  : -0.10D+00  : -0.1       : -0.1
+ALPHAX        Dist. at exp. to pow.       : XXXXXXXXX  : XXXXXXXXX  : XXXXXXXXX  : 1.100D+00  : 1.1        : 1.1
+KAPPA         Exp. compaction rate        : XXXXXXXXX  : XXXXXXXXX  : XXXXXXXXX  : 0.980D+00  : 0.98       : 0.98
+CHI           Sound speed ratio           : XXXXXXXXX  : XXXXXXXXX  : XXXXXXXXX  : 0.600D+00  : 0.6        : 0.6
+---------------------------------------------------------------------------------------------------
+JC_A       strain coeff. a                : XXXXXXXXXX : XXXXXXXXXX : 1.7500D+08 : XXXXXXXXXX : XXXXXXXXXX : XXXXXXXXXX
+JC_B       strain coeff. b                : XXXXXXXXXX : XXXXXXXXXX : 3.8000D+08 : XXXXXXXXXX : XXXXXXXXXX : XXXXXXXXXX
+JC_N       strain exponent                : XXXXXXXXXX : XXXXXXXXXX : 0.3200D+00 : XXXXXXXXXX : XXXXXXXXXX : XXXXXXXXXX
+JC_C       str. rate coeff c              : XXXXXXXXXX : XXXXXXXXXX : 0.0000D+00 : XXXXXXXXXX : XXXXXXXXXX : XXXXXXXXXX
+JC_M       thermal soft.                  : XXXXXXXXXX : XXXXXXXXXX : 0.5500D+00 : XXXXXXXXXX : XXXXXXXXXX : XXXXXXXXXX
+JC_TREF    ref. temperature               : XXXXXXXXXX : XXXXXXXXXX : 2.9300D+02 : XXXXXXXXXX : XXXXXXXXXX : XXXXXXXXXX
+---------------------------------------------------------------------------------------------------
+<<END
