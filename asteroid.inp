@@ -1,0 +1,54 @@
+#ISINP
+------------------------------------------------------------------------
+--- this is the new input file used by iSALE versions of v7.0 and higher
+------------------- General Model Info ---------------------------------
+VERSION               __DO NOT MODIFY__             : 4.1
+DIMENSION             dimension of input file       : 2
+PATH                  Data file path                : ./
+MODEL                 Modelname                     : output
+------------------- Mesh Geometry Parameters ---------------------------
+GRIDH                 horizontal cells              : 0           : 100        : 0
+GRIDV                 vertical cells                : 0           : 920        : 0
+GRIDSPC               grid spacing                  : 5.D-5
+CYL                   Cylind. geometry              : 1.0D0
+------------------- Global setup parameters -----------------------------
+S_TYPE                setup type                    : IMPRT_GEOM
+T_SURF                Surface temp                  : 293.D0
+GRAD_TYPE             gradient type                 : NONE
+COL_SITE              collision j-location          : 700
+------------------- Projectile ("Object") Parameters --------------------
+OBJNUM                number of objects             : 2
+OBJRESH               CPPR horizontal               : 50       : 415
+OBJVEL                object velocity               : -3.3D3    : 0.D3
+OBJMAT                object material               : iron___  : Quartz_
+OBJTYPE               object type                   : PLATE    : PLATE
+OBJOFF_V              object offset                 : 0        : -830
+------------------- Target Parameters ----------------------------------
+LAYNUM                layers number                 : 0
+------------------- Time Parameters ------------------------------------
+DT                    initial time increment        : 1.D-8
+DTMAX                 maximum timestep              : 2.D-7
+TEND                  end time                      : 0.75D-5
+DTSAVE                save interval                 : 0.5D-7
+------------------- Boundary Condition Parameters ----------------------
+BND_L                 left                          : FREESLIP
+BND_R                 right                         : FREESLIP
+BND_B                 bottom                        : OUTFLOW
+BND_T                 top                           : OUTFLOW
+------------------- Numerical Stability Parameters ---------------------
+AVIS                  art. visc. linear             : 0.2D0
+AVIS2                 art. visc. quad.              : 1.0D0
+------------------- Control parameters (global) ------------------------
+STRESS                Consider stress               : 0
+LP_TOLER              Pressure Tolerance            : 1.D-3
+------------------- Data Saving Parameters -----------------------------
+QUALITY               Compression rate              : -50
+VARLIST               List of variables             : #Den-Tmp-Pre-Sie-VEL#
+------------------ Tracer Particle Parameters --------------------------
+TR_QUAL               Integration qual.             : 1
+TR_SPCH               tracer spacing X              : -1.D0      : -1.D0
+TR_SPCV               tracer spacing Y              : -1.D0      : -1.D0
+TR_VAR                tracer variables              : #TrP-Trp-TrT-Trt-Trd-TrM#
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+<<END

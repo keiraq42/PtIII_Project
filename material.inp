@@ -1,0 +1,13 @@
+#ISMAT ! iSale material input file identification string
+--------------------------------------------------------
+MATNAME    Material name          : iron___    : Quartz_    : Oligocl    : Grossul    : Enstati
+EOSNAME    EOS name               : iron___    : Quartz_    : Oligocl    : Grossul    : Enstati
+EOSTYPE    EOS type               : tillo      : tillo      : tillo      : tillo      : tillo
+STRMOD     Strength model         : NONE       : NONE       : NONE       : NONE       : NONE
+DAMMOD     Damage model           : NONE       : NONE       : NONE       : NONE       : NONE
+ACFL       Acoustic fluidisation  : NONE       : NONE       : NONE       : NONE       : NONE
+PORMOD     Porosity model         : NONE       : NONE       : NONE       : NONE       : NONE
+THSOFT     Thermal softening      : NONE       : NONE       : NONE       : NONE       : NONE
+LDWEAK     Low density weakening  : NONE       : NONE       : NONE       : NONE       : NONE
+--------------------------------------------------------
+<<END ! used to identify the end of this file
