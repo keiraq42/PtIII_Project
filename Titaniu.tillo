@@ -1,0 +1,17 @@
+#TILLO
+--------------------------------------------------------------
+--- Tillotson EOS parameter for *** Titanium ***
+--------------------------------------------------------------
+TL_RHO0               Reference density (kg/m^3)    : 4.53D+03
+TL_CHEAT              Spec. heat capacity (J/kg/K)  : 0.773D+03
+TL_BULKA              Bulk modulus (Pa)             : 7.16D+10
+TL_BULKB              Tillotson B constant (Pa)     : 4.57D+10
+TL_EZERO              Tillotson E0 constant (J/kg)  : 1.00D+07
+TL_THERMA             Tillotson a constant          : 5.00D-01
+TL_THERMB             Tillotson b constant          : 2.00D-01
+TL_ALPHA              Tillotson alpha constant      : 5.D0
+TL_BETA               Tillotson beta constant       : 5.D0
+TL_EIV                SIE incipient vaporisation    : 4.72D+6
+TL_ECV                SIE complete vaporisation     : 18.2D+6
+--------------------------------------------------------------
+<<END

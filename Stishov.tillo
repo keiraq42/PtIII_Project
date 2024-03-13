@@ -1,0 +1,17 @@
+#TILLO
+--------------------------------------------------------------
+--- Tillotson EOS parameter for *** Stishovite ***
+--------------------------------------------------------------
+TL_RHO0               Reference density (kg/m^3)    : 4.31D+03
+TL_CHEAT              Spec. heat capacity (J/kg/K)  : 0.742D+03
+TL_BULKA              Bulk modulus (Pa)             : 2.76D+11
+TL_BULKB              Tillotson B constant (Pa)     : 4.67D+11
+TL_EZERO              Tillotson E0 constant (J/kg)  : 1.46D+06
+TL_THERMA             Tillotson a constant          : 5.00D-01
+TL_THERMB             Tillotson b constant          : 2.50D+00
+TL_ALPHA              Tillotson alpha constant      : 5.D0
+TL_BETA               Tillotson beta constant       : 5.D0
+TL_EIV                SIE incipient vaporisation    : 9.99D+5
+TL_ECV                SIE complete vaporisation     : 15.16D+6
+--------------------------------------------------------------
+<<END

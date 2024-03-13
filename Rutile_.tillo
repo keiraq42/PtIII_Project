@@ -1,0 +1,17 @@
+#TILLO
+--------------------------------------------------------------
+--- Tillotson EOS parameter for *** Rutile ***
+--------------------------------------------------------------
+TL_RHO0               Reference density (kg/m^3)    : 4.24D+03
+TL_CHEAT              Spec. heat capacity (J/kg/K)  : 0.690D+03
+TL_BULKA              Bulk modulus (Pa)             : 6.04D+10
+TL_BULKB              Tillotson B constant (Pa)     : 1.77D+11
+TL_EZERO              Tillotson E0 constant (J/kg)  : 5.21D+05
+TL_THERMA             Tillotson a constant          : 5.00D-01
+TL_THERMB             Tillotson b constant          : 2.50D+00
+TL_ALPHA              Tillotson alpha constant      : 5.D0
+TL_BETA               Tillotson beta constant       : 5.D0
+TL_EIV                SIE incipient vaporisation    : 7.52D+5
+TL_ECV                SIE complete vaporisation     : 11.81D+6
+--------------------------------------------------------------
+<<END

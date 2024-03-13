@@ -1,0 +1,17 @@
+#TILLO
+--------------------------------------------------------------
+--- Tillotson EOS parameter for *** Quartz ***
+--------------------------------------------------------------
+TL_RHO0               Reference density (kg/m^3)    : 2.20D+03
+TL_CHEAT              Spec. heat capacity (J/kg/K)  : 0.742D+03
+TL_BULKA              Bulk modulus (Pa)             : 7.75D+09
+TL_BULKB              Tillotson B constant (Pa)     : 7.63D+09
+TL_EZERO              Tillotson E0 constant (J/kg)  : 5.00D+05
+TL_THERMA             Tillotson a constant          : 5.00D-01
+TL_THERMB             Tillotson b constant          : 2.50D+00
+TL_ALPHA              Tillotson alpha constant      : 5.D0
+TL_BETA               Tillotson beta constant       : 5.D0
+TL_EIV                SIE incipient vaporisation    : 1.63D+5
+TL_ECV                SIE complete vaporisation     : 15.2D+6
+--------------------------------------------------------------
+<<END

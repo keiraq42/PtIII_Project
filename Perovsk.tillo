@@ -1,0 +1,17 @@
+#TILLO
+--------------------------------------------------------------
+--- Tillotson EOS parameter for *** Perovskite ***
+--------------------------------------------------------------
+TL_RHO0               Reference density (kg/m^3)    : 3.86D+03
+TL_CHEAT              Spec. heat capacity (J/kg/K)  : 0.807D+03
+TL_BULKA              Bulk modulus (Pa)             : 1.05D+11
+TL_BULKB              Tillotson B constant (Pa)     : 1.18D+11
+TL_EZERO              Tillotson E0 constant (J/kg)  : 8.08D+05
+TL_THERMA             Tillotson a constant          : 5.00D-01
+TL_THERMB             Tillotson b constant          : 2.71D+00
+TL_ALPHA              Tillotson alpha constant      : 5.D0
+TL_BETA               Tillotson beta constant       : 5.D0
+TL_EIV                SIE incipient vaporisation    : 4.43D+5
+TL_ECV                SIE complete vaporisation     : 12.23D+6
+--------------------------------------------------------------
+<<END
